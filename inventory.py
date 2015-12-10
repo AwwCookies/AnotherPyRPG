@@ -35,6 +35,10 @@ class Inventory:
             print("Removed %sx%i from your inventory" % (item_name, 0))
         return 0
 
+    def display(self):
+        for item in self._inventory:
+            print("%s: %i" % (item, self._inventory[item]["amount"]))
+
 
 ########### Tests #############
 def test_add_item():

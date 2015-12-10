@@ -29,6 +29,3 @@ class Player:
         else:
             print("You do not have any %s" % item_name)
         return False
-
-    def display(self):
-        pass
